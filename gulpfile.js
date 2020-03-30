@@ -29,7 +29,8 @@ const banner = ['/*!\n',
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./"
+     /* baseDir: "./"*/
+      proxy:"localhost/Github-repos/startbootstrap-coming-soon"
     },
     port: 3000
   });
